@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.sosmaison.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.sosmaison.GalleryFragment"
+        android:label="Notification"
+        tools:layout="@layout/fragment_gallery" />
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.sosmaison.ui.slideshow.SlideshowFragment"
+        android:label="Mettre a jours mes service"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_setting"
+        android:name="com.example.sosmaison.SettingFragment"
+        android:label="Paramêtre"
+        tools:layout="@layout/fragment_setting" />
+    <fragment
+        android:id="@+id/add_job_Fragment"
+        android:name="com.example.sosmaison.Add_job_Fragment"
+        android:label="Offre mes jobs"
+        tools:layout="@layout/fragment_add_job_" />
+
+
+</navigation>
